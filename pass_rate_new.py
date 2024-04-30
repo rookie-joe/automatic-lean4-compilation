@@ -53,7 +53,7 @@ def multi(command_list, output_path):
     passed = 0
     total = 0
     def execute_command(item):
-        temp_dir = '/opt/jianqiao'
+        temp_dir = './test'
         temp_file = os.path.join(temp_dir, f"test_{item['index']}.lean")  # Ensure unique filenames
         with open(temp_file, "w") as f:
             f.write(item['cmd'])
