@@ -113,7 +113,7 @@ def main(args):
             for line in rf.readlines():
                 try:
                     json_item = json.loads(line)
-                    json_item['cmd']  = '\n\n'.join([json_item['working_file'],   json_item['statement']])
+                    json_item['cmd']  = '\n\n'.join([json_item['working_file'],   json_item['statement_proof']])
                 except:
                     import pdb
                     pdb.set_trace()
