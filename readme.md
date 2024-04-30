@@ -31,7 +31,7 @@ To install **automatic-lean4-compilation**, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/xx/automatic-lean4-compilation
+   git clone [https://github.com/xx/automatic-lean4-compilation](https://github.com/rookie-joe/automatic-lean4-compilation.git)
    ```
 
 2. Navigate to the cloned directory:
