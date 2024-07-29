@@ -68,7 +68,12 @@ The quickest way to use the tool is by running the following command:
 python3 pass_rate_new.py --input_path {input_path} --output_path {output_path}
 ```
 
-- `input_path` should be a directory containing `*.json` files. Each JSON file should be named starting with a **digit** and contain a dictionary with two keys: `"statement"` for the Lean4-based language to be compiled and `"content"` for the predependencies of the `"statement"`, e.g., importing mathlib.
+- `input_path` should be a directory containing `*.json` files. Each JSON file must be named starting with a **digit** and should contain a dictionary with four keys:
+  1. `"statement_proof"`: Contains the Lean4-based language to be compiled.
+  2. `"working_file"`: Contains the predependencies of the `"statement_proof"` (e.g., importing mathlib).
+  3. `"statement"`: Can have a value of `None`.
+  4. `"content"`: Can have a value of `None`.
+
 
 - `output_path` is recommended to be a text file that will display the compilation process and the final compilation pass rate for all items in `input_path`.
   
